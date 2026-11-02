@@ -576,6 +576,7 @@ function triggerReceiptPrint(cleanSaleId, timestamp, cartItems, subtotal, discou
 
       ${logoHtml}
       <div class="tc" style="font-size:16px;font-weight:900;letter-spacing:1px;margin-bottom:1px;">NOUMAN PHARMACY</div>
+      <div class="tc" style="font-size:10px;color:#000;margin-bottom:1px;">License: Retail/8b-5v17x62d9</div>
       <div class="tc" style="font-size:10px;color:#000;margin-bottom:1px;">&#9990; 0327-8322014</div>
       <div class="tc" style="font-size:10px;color:#000;margin-bottom:4px;">&#9993; noumanpharmacy12@gmail.com</div>
 
@@ -758,6 +759,7 @@ async function buildEscPosReceipt(cleanSaleId, timestamp, cartItems, subtotal, d
   p.println('NOUMAN PHARMACY');
   p.setTextNormal();
   p.bold(false);
+  p.println('License: Retail/8b-5v17x62d9');
   p.println('Tel: 0327-8322014');
   p.println('noumanpharmacy12@gmail.com');
   p.drawLine();
